@@ -1,0 +1,16 @@
+<h1 *ngIf="success" style="text-align: center;">WishList</h1>
+<div *ngIf="success" class="container">
+    <div *ngFor="let ele of wishListElements" class="row rowElement">
+        <div  class="col-4 book text-center">
+            <img src="../../assets/{{ele.imageLink}}"  width="200" height="150">
+            <p>Title:{{ele.title}}</p>
+            <p>Author:{{ele.author}}</p>
+            <p>Language:{{ele.language}}</p>
+            <p>Pages:{{ele.pages}}</p>
+            <p>Year:{{ele.year}}</p>
+            <p>Country:{{ele.country}}</p>
+            <a href="{{ele.link}}" style="color:blue ;">Link Of The Book</a><br><br>
+        </div> 
+    </div>
+</div>
+<h1 *ngIf="!success" style="text-align: center;">Login To See Your Wishlist</h1>
