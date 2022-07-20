@@ -1,0 +1,43 @@
+h1{
+    color:rgb(122, 26, 26);
+}
+p{
+    color:rgb(122, 26, 26);
+    padding-left: 100px;
+    font-size: x-small;
+    
+}
+.register{
+    justify-content: center;
+    padding: 50px;
+    margin-left: 40%;
+    margin-right: 50%;
+    align-items: center;
+    align-content: center;
+}
+button{
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+label {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    width: 10px;
+  }
+  input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  }
+  input, select {
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
