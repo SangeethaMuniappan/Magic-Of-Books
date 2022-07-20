@@ -1,0 +1,19 @@
+{
+  "Users":[
+    {
+    "id":"1",
+    "name":"sumanth",
+    "salary":"2000"
+    },
+    {
+      "id":"2",
+      "name":"sumanth",
+      "salary":"2000"
+      },
+      {
+        "id":"3",
+        "name":"sumanth",
+        "salary":"2000"
+        }
+      ]
+    }
