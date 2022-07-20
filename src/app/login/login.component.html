@@ -1,0 +1,16 @@
+
+<form #userform="ngForm" (ngSubmit)="login()">
+  <div *ngIf="!success">
+    <div class="login">
+    <label>UserName:</label>
+    <input type="text" name="username" required #usernameControl="ngModel" [(ngModel)]="username" placeholder="Enter Username"><br>
+    <p *ngIf="usernameControl.touched && usernameControl.invalid">Username required</p><br>
+    <label>Password:</label>
+    <input type="password" name="password" autocomplete="on" required #passwordControl="ngModel" [(ngModel)]="password" placeholder="Enter Password"><br>
+    <p *ngIf="passwordControl.touched && passwordControl.invalid">Password required</p><br>
+    <p *ngIf="userform.valid && !success && onclick">Enter the correct credentials</p>
+    <button class="btn btn-success" type="submit">LOGIN</button><br>
+  </div>
+  </div>
+</form>
+<h1 *ngIf="success" style="text-align: center;">Already LoggedIn</h1>
